@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="/examen/dashboard.css">
 </head>
 <body>
-    <nav class="nav"><h1>Navegador</h1></nav>
+    <nav class="nav">
+        <h1>Navegador</h1>
+        <form method="POST" action="/logout" style="float: right; margin-right: 20px;">
+            @csrf
+            <button type="submit" style="padding: 5px 10px;">Tancar Sessió</button>
+        </form>
+    </nav>
     <aside class="aside"><h1>SideBar</h1></aside>
     <main class="main">
         <a href="/añadir">Añade un nuevo producto</a>
